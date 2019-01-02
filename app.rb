@@ -13,7 +13,7 @@ class App < Sinatra::Base
   
   post '/checkout' do
     
-    session["item"] = input 
+    session[:item] = input 
     @session = session 
   end
 
